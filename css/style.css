@@ -3,42 +3,102 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Elementi comuni */
 body{
+    background-color: black;
     font-family: Arial, sans-serif;
 }
-main{
-    height: 100vh;
-    background-color: black;
+header{
+    height: 50px;
 }
+main{
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    margin-top: 20px;
+    width: 100vw;
+}
+footer{
+    height: 80px;
+    background-color: rgb(81, 81, 81);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+/* classi di layout */
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
+}
+/* colonne */
+.col-15{
+    width: calc(100% / 7);
+    min-width: 170px;
+    aspect-ratio: 16/9;
+}
+.col-10{
+    width: 10px;
+}
+.col-30{
+    width: 30%;
+}
+.col-60{
+    width: 60%;
 }
 .col-100{
     width: 100%;
 }
+/* content  */
 .content{
-    text-align: right;
+    padding: 10px;
 }
-.bg-darkgrey{
-    background-color: rgb(70, 70, 70);
+.content-main{
+  margin: 5px 2px;
+  position: relative;
 }
+
+/* classi di stile  */
+/* generiche  */
 .labels{
     display: flex;
     position: absolute;
-    right: 10px;
     top: 10px;
+    right: 10px;
 }
 .label{
     padding: 5px;
     color: white;
-    font-size: 15px;
-    text-align: left;
     border-radius: 5px;
 }
+.label-name{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    color: white;
+    padding: 5px;
+    background-color: rgba(172, 172, 172, 0.354);
+}
+/* selettori composti  */
+.labels a{
+    text-decoration: none;
+}
+.content-main img{
+    width: 100%;
+}
+/* background e colori  */
+.bg-darkgrey{
+    background-color: rgb(70, 70, 70);
+}
+/* margin */
 .mr-5{
     margin-right: 5px;
 }
+/* text  */
+.text-right{
+    text-align: right;
+}
+
