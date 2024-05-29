@@ -99,7 +99,13 @@ footer{
     width: 100%;
 }
 .content-footer i{
-    margin: 0px 10px;
+    margin: 0px 5px;
+}
+.col-60 .content-footer .fs-25{
+    margin: 0px 20px;
+}
+.content-footer .fa-angle-up{
+    margin-top: 15px;
 }
 /* background e colori  */
 .bg-darkgrey{
@@ -111,16 +117,19 @@ footer{
 .red{
     color: red;
 }
+.green{
+    color: green;
+}
 /* margin */
 .mr-5{
     margin-right: 5px;
 }
-.mt-10{
-   margin-top: 10px;
-}
 .mt-5{
     margin-top: 5px;
  }
+.mt-10{
+   margin-top: 10px;
+}
 .ml-15{
     margin-left: 15px;
 }
