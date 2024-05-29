@@ -12,14 +12,14 @@ header{
     height: 50px;
 }
 main{
-    height: calc(100vh - 130px);
+    height: calc(100vh - 140px);
     overflow-y: auto;
-    margin-top: 20px;
+    margin: 20px 0px 10px 0px;
     width: 100vw;
 }
 footer{
     height: 80px;
-    background-color: rgb(81, 81, 81);
+    background-color: rgb(55, 55, 55);
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -29,6 +29,10 @@ footer{
     max-width: 1200px;
     margin: 0 auto;
 }
+.container-footer{
+    max-width: 100%;
+    margin: 0 auto;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -36,11 +40,11 @@ footer{
 /* colonne */
 .col-15{
     width: calc(100% / 7);
-    min-width: 170px;
+    min-width: 100px;
     aspect-ratio: 16/9;
 }
 .col-10{
-    width: 10px;
+    width: 10%;
 }
 .col-30{
     width: 30%;
@@ -59,7 +63,12 @@ footer{
   margin: 5px 2px;
   position: relative;
 }
-
+.content-footer{
+    display: flex;
+    text-align: center;
+    color: white;
+    padding: 13px;
+}
 /* classi di stile  */
 /* generiche  */
 .labels{
@@ -89,16 +98,43 @@ footer{
 .content-main img{
     width: 100%;
 }
+.content-footer i{
+    margin: 0px 10px;
+}
 /* background e colori  */
 .bg-darkgrey{
     background-color: rgb(70, 70, 70);
+}
+.bg-grey{
+    background-color: rgb(97, 97, 97);
+}
+.red{
+    color: red;
 }
 /* margin */
 .mr-5{
     margin-right: 5px;
 }
+.mt-10{
+   margin-top: 10px;
+}
+.mt-5{
+    margin-top: 5px;
+ }
+.ml-15{
+    margin-left: 15px;
+}
 /* text  */
 .text-right{
     text-align: right;
+}
+.fa-angle-up{
+    font-size: 10px;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-25{
+    font-size: 25px;
 }
 
