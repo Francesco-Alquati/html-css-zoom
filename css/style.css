@@ -15,7 +15,6 @@ main{
     height: calc(100vh - 140px);
     overflow-y: auto;
     margin: 20px 0px 10px 0px;
-    width: 100vw;
 }
 footer{
     height: 80px;
@@ -60,8 +59,8 @@ footer{
     padding: 10px;
 }
 .content-main{
-  margin: 5px 2px;
-  position: relative;
+    margin: 3px;
+    position: relative;
 }
 .content-footer{
     display: flex;
@@ -81,6 +80,9 @@ footer{
     padding: 5px;
     color: white;
     border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
 }
 .label-name{
     display: flex;
@@ -92,9 +94,6 @@ footer{
     background-color: rgba(172, 172, 172, 0.354);
 }
 /* selettori composti  */
-.labels a{
-    text-decoration: none;
-}
 .content-main img{
     width: 100%;
 }
